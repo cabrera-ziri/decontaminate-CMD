@@ -2,8 +2,12 @@ Here I keep different ways to decontaminate a cluster's CMD based only on the ph
 
 ## To do:
 
-1. m4_labels.ipynb
-    - Change membership label from bool to int. At the moment I'm doing this inside pop_classifier
-2. pop_classifier.ipynb
+1. first_pop_classifier.ipynb
     - Try a simple decission tree
+2. emp_pop_classifier.ipynb
+    - From a sample of (mostly) cluster stars and (mostly) field stars defined from the centre and outskirts
+    of cluster, get a model of cluster and field CMD.
+    - Distribute uniformly in space field stars. For cluster stars follow Plummer model of the cluster's radius
+    - Train classifier using this mock data and check performance
+    - Apply classifier on real data
     
