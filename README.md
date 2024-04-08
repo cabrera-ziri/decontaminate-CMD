@@ -11,7 +11,7 @@ Here I keep different ways to decontaminate the CMD of a cluster, based only on 
 
     - Then we model the cluster and field CMD using GMM.
 
-    ![mock cluster CMD](figures/mock_cluster_CMD.png "mock cluster CMD")
+    ![mock cluster CMD](figures/mock_cluster_cmd.png "mock cluster CMD")
 
     - Distribute field stars uniformly in space. For cluster stars follow the Plummer model of the cluster radius.
     - Train the classifier on this mock data and check performance. *It's very important that spatial footprint is similar to data!!!*.
