@@ -37,12 +37,6 @@ The **decontaminate-CMD** project provides tools to distinguish between field an
 - astroML
 
 
-Here I keep different ways to decontaminate the CMD of a cluster, based only on the photometry of the field and cluster regions.
-
-1. decontaminate_ngc419.ipynb: is the method presented in  based on statistical decontamination of CMD.
-
-2. first_pop_classifier.ipynb: Proof-of-concept random forest classifier based on perfect membership labels. This will be developed to be trained on mock data (i.e. real world labels).
-
 3. pop_classifier.ipynb: Based on first_pop_classifier. But:
     - From a sample of (mostly) cluster stars and (mostly) field stars, defined from the centre and outskirts of the cluster.
 
