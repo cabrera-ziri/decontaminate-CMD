@@ -38,16 +38,17 @@ The **decontaminate-CMD** project provides tools to distinguish between field an
 
 
 ## Example
-    - From a sample of (mostly) cluster stars and (mostly) field stars, defined from the centre and outskirts of the cluster.
 
-    ![m4 starting samples](figures/starting_samples.png "m4 starting samples")
+- From a sample of (mostly) cluster stars and (mostly) field stars, defined from the centre and outskirts of the cluster.
 
-    - Then we model the cluster and field CMD using GMM.
+![m4 starting samples](figures/starting_samples.png "m4 starting samples")
 
-    ![mock cluster CMD](figures/mock_cluster_cmd.png "mock cluster CMD")
+- Then we model the cluster and field CMD using GMM.
 
-    - Distribute field stars uniformly in space. For cluster stars follow the Plummer model of the cluster radius.
-    - Train the classifier on this mock data and check performance. *It's very important that spatial footprint is similar to data!!!*.
+![mock cluster CMD](figures/mock_cluster_cmd.png "mock cluster CMD")
+
+- Distribute field stars uniformly in space. For cluster stars follow the Plummer model of the cluster radius.
+- Train the classifier on this mock data and check performance. *It's very important that spatial footprint is similar to data!!!*.
     
 This is an example of first_pop_classifier on M4 data set:
 
@@ -57,8 +58,4 @@ This is the confusion matrix for this dataset:
 
 ![m4 confusion matrix](figures/m4_confusion_matrix.png "m4 confusion matrix")
 
-## To do:
-
-1. first_pop_classifier.ipynb
-    - Try a simple decission tree
     
