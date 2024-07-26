@@ -1,6 +1,45 @@
+## Overview
+
+The **decontaminate-CMD** project provides tools to distinguish between field and cluster stars using a combination of spatial and photometric data. The main method involves Gaussian Mixture Models (GMM) for CMD modeling and a random forest classifier for star classification.
+
+## Methods Included
+
+- **`decontaminate_ngc419.ipynb`**  
+  Implements statistical decontamination of CMD based on [Cabrera-Ziri et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020MNRAS.495..375C/abstract).
+- **`first_pop_classifier.ipynb`**  
+  A proof-of-concept random forest classifier using perfect membership labels trained on mock data.
+
+- **`pop_classifier.ipynb`**  
+  Enhances the first classifier by:
+  - Sampling cluster and field stars.
+  - Modeling the CMD using GMM.
+  - Using the Plummer model for cluster stars and uniform distribution for field stars.
+  - Training the classifier on mock data with a similar spatial footprint to real data.
+
+## Features
+
+- **Gaussian Mixture Models (GMM):** Probabilistic representation of CMD data.
+- **Random Forest Classifier:** Classifies stars based on CMD positions and spatial distributions.
+- **Synthetic Data Generation:**
+  - **Cluster Stars:** Distributed according to the Plummer model.
+  - **Field Stars:** Distributed uniformly.
+- **Performance Evaluation:** Confusion matrix and metrics for classification accuracy.
+
+## Requirements
+
+- Python 3.x
+- Jupyter Notebook
+- numpy
+- pandas
+- matplotlib
+- seaborn
+- scikit-learn
+- astroML
+
+
 Here I keep different ways to decontaminate the CMD of a cluster, based only on the photometry of the field and cluster regions.
 
-1. decontaminate_ngc419.ipynb: is the method presented in [Cabrera-Ziri et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020MNRAS.495..375C/abstract) based on statistical decontamination of CMD.
+1. decontaminate_ngc419.ipynb: is the method presented in  based on statistical decontamination of CMD.
 
 2. first_pop_classifier.ipynb: Proof-of-concept random forest classifier based on perfect membership labels. This will be developed to be trained on mock data (i.e. real world labels).
 
