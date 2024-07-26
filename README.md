@@ -37,7 +37,7 @@ The **decontaminate-CMD** project provides tools to distinguish between field an
 - astroML
 
 
-3. pop_classifier.ipynb: Based on first_pop_classifier. But:
+## Example
     - From a sample of (mostly) cluster stars and (mostly) field stars, defined from the centre and outskirts of the cluster.
 
     ![m4 starting samples](figures/starting_samples.png "m4 starting samples")
