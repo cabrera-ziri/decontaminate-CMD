@@ -58,4 +58,11 @@ This is the confusion matrix for this dataset:
 
 ![m4 confusion matrix](figures/m4_confusion_matrix.png "m4 confusion matrix")
 
+## To do:
+- Find the cluster in x and y
+- Set up the circle size of cluster sample in an automated way
+- Set up the ring size of the field sample in an automated way
+  
+
+
     
